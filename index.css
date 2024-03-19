@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: RGB(9, 63, 133);
+    background-color: rgb(9, 63, 133);
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     width: 1fr;
     padding: 10px;
     column-gap: 25px;
-    background-color: RGB(0, 47, 201);
+    background-color: rgb(0, 47, 201);
     color: white;
 }
 
@@ -26,6 +26,7 @@ header {
 }
 
 #menu-burguer {
+    background-color: rgb(0, 47, 201);
     color: white;
     display: block;
     text-align: center;
@@ -34,7 +35,8 @@ header {
 }
 
 #menu-burguer:hover {
-    color: RGB(62, 123, 255);
+    background-color: white;
+    color: rgb(9, 63, 133);
 }
 
 menu {
@@ -57,8 +59,8 @@ menu>ul>li>a {
 }
 
 menu>ul>li>a:hover {
-    background-color: white;
-    color: rgb(0, 47, 201);
+    background-color: rgb(9, 63, 133);
+    color: white;
 }
 
 img {
@@ -131,7 +133,7 @@ p {
 
 #frase {
     font-size: 32px;
-    color: RGB(0, 47, 201);
+    color: rgb(0, 47, 201);
     padding-bottom: 20px;
 }
 
@@ -150,7 +152,7 @@ p {
     text-decoration: none;
     font-family: "Fira Mono", Arial, Helvetica, sans-serif;
     font-weight: 500;
-    background-color: RGB(13, 89, 230);
+    background-color: rgb(13, 89, 230);
     color: white;
     box-shadow: -3px 3px 0px 1px #002658;
     margin: 0;
@@ -177,9 +179,9 @@ p {
     }
 }
 
-.btn: hover {
+.btn:hover {
     filter: brightness(120%);
-    box-shadow: -2px 2px 3px 1px RGB(5, 58, 128);
+    box-shadow: -2px 2px 3px 1px rgb(5, 58, 128);
 }
 
 footer {
@@ -193,7 +195,7 @@ footer {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    background-color: RGB(0, 47, 201);
+    background-color: rgb(0, 47, 201);
     color: white;
     text-align: center;
 }
@@ -213,7 +215,7 @@ footer p {
     max-width: 25px;
 }
 
-#rs-img: hover {
+#rs-img:hover {
     transition: 0.2s;
     transform: scale(1.2);
 }
