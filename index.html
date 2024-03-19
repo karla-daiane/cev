@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso em Vídeo</title>
     <link rel="shortcut icon" href="img/cev-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -17,6 +18,14 @@
                 <img src="img/cursoemvideo-logo-branca.png" alt="Logo Curso em Vídeo">
             </div>
         </header>
+        <span id="menu-burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menuItens">
+            <ul>
+                <li><a href="#txt-cv">Curso em Vídeo</a></li>
+                <li><a href="#midia">Top 10 Cursos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+        </menu>
         <div id="content">
             <div id="txt-cv">
                 <h1>Curso em Vídeo</h1>
@@ -36,7 +45,7 @@
             <div id="midia">
                 <h3>10 Cursos que você pode fazer no Curso em Vídeo:</h3>
                 <iframe id="video" width="681" height="383" src="https://www.youtube.com/embed/Ldl_CvMGmEA"
-                    title="🥇 TOP 10 Cursos Grátis para fazer na área de Tecnologia ✋🤚" frameborder="0"
+                    title="TOP 10 Cursos Grátis para fazer na área de Tecnologia" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -52,10 +61,14 @@
             <div id="acesso">
                 <h3 id="frase">Não perca sua chance de aprender!!!</h3>
                 <div id="buttons">
-                    <p>Acesse nosso site e tenha acesso a diversos cursos gratuitos.</p>
-                    <a href="https://www.cursoemvideo.com/" rel="noopener" target="_blank" class="btn">Site Curso em Vídeo</a>
-                    <p>Se inscreva no nosso canal do Youtube e fique sempre atualizado.</p>
-                    <a href="https://www.youtube.com/@CursoemVideo" rel="noopener" target="_blank" class="btn">Youtube do Curso em Vídeo</a>
+                    <div id="d">
+                        <p>Acesse nosso site e tenha acesso a diversos cursos gratuitos.</p>
+                        <a href="https://www.cursoemvideo.com/" rel="noopener" target="_blank" class="btn">Site Curso em Vídeo</a>
+                    </div>
+                    <div id="d">
+                        <p>Se inscreva no nosso canal do Youtube e fique sempre atualizado.</p>
+                        <a href="https://www.youtube.com/@CursoemVideo" rel="noopener" target="_blank" class="btn">Youtube do Curso em Vídeo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,6 +90,15 @@
             </div>
         </footer>
     </main>
+    <script>
+        function clickMenu() {
+            if (menuItens.style.display == 'block') {
+                menuItens.style.display = 'none'
+            } else {
+                menuItens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 
 </html>
